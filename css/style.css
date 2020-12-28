@@ -1,0 +1,72 @@
+/* * {
+    outline: 1px black solid;
+} */
+
+body {
+    background-color: #C3B59F;
+    /* opacity: .3; */
+}
+
+h1 {
+    background-color: #4A6670;
+    /* outline: 3px black solid; */
+    border: 3px black solid;
+    border-radius: 10px;
+    /* max-width: 100%; still figuring this one out */
+}
+
+.nobullets {
+    list-style-type: none;
+}
+
+ul {
+    position: sticky;
+    top: 0;
+}
+
+li {
+    display: inline;
+    /* float: left; */
+}
+
+h2 {
+    margin: 55px;
+    background-color: #4A6670;
+    /* outline: 3px black solid; */
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
+p {
+    background-color: #A0AF84;
+    padding: 20px;
+    text-emphasis: italic;
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
+.background-cakes {
+    background-color: #668F80;
+}
+
+img {
+    /* padding: 50px; */
+    opacity: 1.0; /* makes image 100% until you hover */
+}
+
+img:hover {
+    opacity: 0.5; /* makes image 50% when hovering */
+}
+
+section {
+    margin: auto;
+}
+
+.responsive {
+    width: 30%;
+    height: auto;
+}
+
+footer {
+    background-color: #D6A2AD;
+}
