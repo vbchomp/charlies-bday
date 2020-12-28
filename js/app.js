@@ -1,9 +1,6 @@
-/*var cupcake = "Good Morning, Cupcake!";
-console.log(cupcake); */
-
 /* Function for password */
 function enterPassword() {
-    var myPassword = "cuteCakes";
+    var myPassword = "bday";
 
     do {
         var userPassword = prompt("Please enter your password");
@@ -14,34 +11,24 @@ enterPassword();
 document.write("<br>");
 document.write("<br>");
 
-// /* Function for top 3 cakes */
-// function topFlavors(); {
-//     firstPlace = "Chocolate";
-//     secondPlace = "Pistachio";
-//     thirdPlace = "Vanilla";
-
-//     for (var = 0; i < 3; i++) {
-//         document.write(i);
-//     }
-// }
 
 /* Function that asks if you want to chat*/
-function promptHelp() {
-    var promptHelp = "Would you like to chat?";
-    var response = prompt(promptHelp);
+function promptName() {
+    var promptName = "What is your name?";
+    var response = prompt(promptName);
     //console.log(response);
     response = response.toLowerCase();
     var alertMessage;
-        if (response == "yes") {
-        alertMessage = "I'm still learning Web Development. Please hold until I can figure out a response.";
+        if (response == "charlie") {
+        alertMessage = "Hello, Charlie! Welcome to your birthday website!";
     } else {
-        alertMessage = "Good thing you are not holding your breath!";
+        alertMessage = "Let's wait for Charlie to help you!";
     }
 alert(alertMessage);
 }
 
 /* Calling Chat function */
-promptHelp();
+promptName();
 
 /* Function to order cakes */
 function orderCakes() {
@@ -63,25 +50,6 @@ function orderCakes() {
 }
 // Call the order cakes function
 orderCakes();
-
-// /* Function to determine the area */
-// function areaFunction() {
-//     var length;
-//     var width;
-//     var lengthPrompt = "Enter length";
-//     var widthPrompt = "Enter width";
-//     var lengthResponse = prompt(lengthPrompt);
-//     var widthResponse = prompt(widthPrompt);
-//     var area = lengthResponse * widthResponse;
-//     /* console.log(area); */
-
-//     var alertMessage = "The area is " + area + "!";
-
-// alert(alertMessage);
-// }
-
-// /* Calling area function */
-// areaFunction();
 
 document.write("<br>");
 document.write("<br>");
@@ -123,14 +91,7 @@ function addCakes(type) {
     var htmlImage = "<img src=\"images/" + type + ".JPG\" class=\"responsive\">";
     document.write(htmlImage);
     document.write("<br>");
-//     //document.write("<section> \
-//                     <h2>" + type + "cakes" + "</h2> \
-//                     <img src=\"images/" + type + ".JPG\"> \
-//                     </section>");
-} 
-                //<p>" + description ".</p> \
-                // work on this one tomorrow
-//document.write(type, description);
+
 
 //addCakes(userInput);
 
@@ -153,8 +114,3 @@ for (var i = 0; i < numberOfCakes; i++) {
     // typeCakes stores the value of the inputPrompt function outside of the function 
     addCakes(typeCakes);
 }
-
-    //var i;
-//for (i of typeCakes) {
-//    document.write("<img src="images/Simple_Wed.JPG" class="responsive" alt="Wedding Cake with flowers">");
-//}
