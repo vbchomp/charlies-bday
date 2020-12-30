@@ -70,10 +70,24 @@ section {
     margin: auto;
 }
 
-/* .responsive {
+.responsive {
     width: 30%;
     height: auto;
-} */
+}
+
+.gallery {
+    margin: 10px 50px;
+}
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 400px;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.3);
+}
 
 footer {
     background-color: #FFBE0B;
