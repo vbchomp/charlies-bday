@@ -13,9 +13,12 @@ h1 {
     border: 3px black solid;
     border-radius: 10px;
     /* max-width: 100%; still figuring this one out */
+    font-family: "Fantasy", "Arial";
+    font-stretch: ultra-expanded;
+    font-size: 450%;
 }
 
-.nobullets {
+/* .nobullets {
     list-style-type: none;
 }
 
@@ -27,14 +30,16 @@ ul {
 li {
     display: inline;
     /* float: left; */
-}
+/* } */
 
 h2 {
-    margin: 55px;
+    margin: auto;
     background-color: #FB5607;
     /* outline: 3px black solid; */
     border: 3px black solid;
     border-radius: 10px;
+    font-family: "Arial", "Courier New";
+    font-size: 250%;
 }
 
 p {
@@ -43,30 +48,35 @@ p {
     text-emphasis: italic;
     border: 3px black solid;
     border-radius: 10px;
+    text-align: center;
+    font-family: "Arial", "Courier New";
+    font-size: 150%;
 }
 
-.background-bday {
+/* .background-bday {
     background-color: #FFBE0B;
-}
+} */
 
-img {
+/* img {
     /* padding: 50px; */
-    opacity: 1.0; /* makes image 100% until you hover */
-}
+ /*   opacity: 1.0; /* makes image 100% until you hover */
+/* } */
 
-img:hover {
+/* img:hover {
     opacity: 0.5; /* makes image 50% when hovering */
-}
+/* } */
 
 section {
     margin: auto;
 }
 
-.responsive {
+/* .responsive {
     width: 30%;
     height: auto;
-}
+} */
 
 footer {
-    background-color: #3A86FF;
+    background-color: #FFBE0B;
+    border: 3px black solid;
+    border-radius: 10px;
 }

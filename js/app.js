@@ -1,18 +1,13 @@
-/* Function for password */
-function enterPassword() {
-    var myPassword = "bday";
+// Trying this again
+// function promptName() {
+//     var myName = "charlie";
+//     do {
+//         var userName = prompt("What is your name?");
+//     } while(userName !== myName);
+// }
+// promptName();
 
-    do {
-        var userPassword = prompt("Please enter your password");
-    } while(userPassword !== myPassword);
-}
-enterPassword();
-
-document.write("<br>");
-document.write("<br>");
-
-
-/* Function that asks if you want to chat*/
+/* Function that asks your name*/
 function promptName() {
     var promptName = "What is your name?";
     var response = prompt(promptName);
@@ -27,90 +22,52 @@ function promptName() {
 alert(alertMessage);
 }
 
-/* Calling Chat function */
+/* Calling Name function */
 promptName();
 
-/* Function to order cakes */
-function orderCakes() {
-    // Declare the variable promptCakes
-    var promptCakes = "How many cakes would you like to order?"
-    // Assign responseCakes the value of promptCakes
-    var responseCakes = prompt(promptCakes);
-    // console.log(responseCakes);
-    // Create function to determine whether write should have cake or cakes
-    function cakeCakes() {
-        if (responseCakes > 1) {
-            document. write("That is amazing! I can make you " + responseCakes + " cakes!");
-        } else {
-            document. write("That is amazing! I can make you a cake!");
-        }
+/* Function for password */
+function enterPassword() {
+    var myPassword = "bday";
+
+    do {
+        var userPassword = prompt("Please enter your password");
+    } while(userPassword !== myPassword);
+}
+// Calling password function
+enterPassword();
+
+/* Function to show pictures */
+function showPics(typePics) {
+    // // Declare the variable prompPics
+    // var promptPics = "How many pictures would you like to see?"
+    // // Assign responsePics the value of promptPics
+    // var responsePics = prompt(promptPics);
+    // // console.log(responsePics);
+    // // Create function to determine whether write should have pic or pics
+    // function picPics() {
+    //     if (responsePics > 1) {
+    //         document. write("That is amazing! I can show you " + responsePics + " pictures!");
+    //     } else {
+    //         document. write("That is amazing! I can show you a picture!");
+    //     }
+    // }
+    // Call the picPics function
+    var typePics = inputPrompt("What picture do you want? Choose sisters or grandparents");
+
+    if(typePics === "sisters") {
+        var htmlImage = "<img src=\"images/" + typePics + ".JPG\" class=\"responsive\">";
+        document.write(htmlImage);
+    }else if (typePics === "grandparents") {
+        var htmlImage = "<img src=\"images/" + typePics + ".JPG\" class=\"responsive\">";
+        document.write(htmlImage);
     }
-    // Call the cake cakes function
-    cakeCakes();   
+
+    // for (var i = 0; i < responsePics; i++) {
+    //     picPics(typePics); 
+    // }  
 }
-// Call the order cakes function
-orderCakes();
+// Call the showPics function
+showPics();
 
 document.write("<br>");
 document.write("<br>");
-
-/* Say Hi function */
-function sayHi() {
-    document.write ("Hi! How are you?")
-}
-sayHi();
-
-document.write("<br>");
-document.write("<br>");
-
-/* function to call prompt */
-// var userInput;
-function inputPrompt(message) {
-    var userInput = prompt(message);
-    return userInput;
-}
-
-/* Function to add pictures of cakes */
-
-/* wedding add 2 wedding cakes
-graduation ad 5 cakes
-crazy add 10 crazy cakes */
-
-function addCakes(type) {
-    // declare description as variable
-    var description;
-    // evaluate type in if else
-    if (type === "wedding") {
-        description = "2 cakes for you and your groom!";
-    } else if (type === "graduation") {
-        description = "5 cakes for your graduation party!"; 
-    } else if (type === "crazy") {
-        description = "10 crazy cakes it is!";
-    } 
-
-    var htmlImage = "<img src=\"images/" + type + ".JPG\" class=\"responsive\">";
-    document.write(htmlImage);
-    document.write("<br>");
-
-
-//addCakes(userInput);
-
-var typeCakes = inputPrompt("What type of cake do you want? Choose wedding, graduation or crazy.");
-// var cakes = ["wedding", "graduation", "crazy"];
-var numberOfCakes;
-
-if(typeCakes === "wedding") {
-    numberOfCakes = 2;
-}else if (typeCakes === "graduation") {
-    numberOfCakes = 5;
-}else if (typeCakes === "crazy") {
-    numberOfCakes = 10;
-}else{
-    numberOfCakes = 15;
-}  
-
-for (var i = 0; i < numberOfCakes; i++) {
-    // console.log(i);   
-    // typeCakes stores the value of the inputPrompt function outside of the function 
-    addCakes(typeCakes);
-}
