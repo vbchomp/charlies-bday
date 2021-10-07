@@ -26,15 +26,15 @@ alert(alertMessage);
 promptName();
 
 /* Function for password */
-function enterPassword() {
-    var myPassword = "bday";
+// function enterPassword() {
+//     var myPassword = "bday";
 
-    do {
-        var userPassword = prompt("Please enter your password");
-    } while(userPassword !== myPassword);
-}
-// Calling password function
-enterPassword();
+//     do {
+//         var userPassword = prompt("Please enter your password");
+//     } while(userPassword !== myPassword);
+// }
+// // Calling password function
+// enterPassword();
 
 /* Function to show pictures */
 function showPics(typePics) {
